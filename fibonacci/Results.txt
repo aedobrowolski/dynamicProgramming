@@ -1,0 +1,10 @@
+Test                                Runs         Time per Operation
+BenchmarkDynamic10-8           200000000                 9.63 ns/op
+BenchmarkDynamic20-8           100000000                17.3  ns/op
+BenchmarkDynamic40-8            30000000                40.3  ns/op
+BenchmarkMemoized10-8            1000000              1846    ns/op
+BenchmarkMemoized20-8             300000              4570    ns/op
+BenchmarkMemoized40-8             200000             10155    ns/op
+BenchmarkRecursive10-8           5000000               329    ns/op
+BenchmarkRecursive20-8             30000             40869    ns/op
+BenchmarkRecursive40-8                 2         619035450    ns/op
