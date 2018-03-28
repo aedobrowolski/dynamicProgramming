@@ -1,10 +1,22 @@
-Test                                Runs         Time per Operation
-BenchmarkDynamic10-8           200000000                 9.63 ns/op
-BenchmarkDynamic20-8           100000000                17.3  ns/op
-BenchmarkDynamic40-8            30000000                40.3  ns/op
-BenchmarkMemoized10-8            1000000              1846    ns/op
-BenchmarkMemoized20-8             300000              4570    ns/op
-BenchmarkMemoized40-8             200000             10155    ns/op
-BenchmarkRecursive10-8           5000000               329    ns/op
-BenchmarkRecursive20-8             30000             40869    ns/op
-BenchmarkRecursive40-8                 2         619035450    ns/op
+$ go test -bench .
+
+BenchmarkFibonacci/Dynamic1-8         	300000000	         4.03 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFibonacci/Memoized1-8        	 5000000	       373 ns/op	     232 B/op	       4 allocs/op
+BenchmarkFibonacci/Recursive1-8       	300000000	         4.02 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFibonacci/Selfref1-8         	200000000	         6.54 ns/op	       0 B/op	       0 allocs/op
+
+BenchmarkFibonacci/Dynamic10-8        	100000000	        12.1 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFibonacci/Memoized10-8       	 1000000	      1849 ns/op	     524 B/op	       5 allocs/op
+BenchmarkFibonacci/Recursive10-8      	 5000000	       329 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFibonacci/Selfref10-8        	 5000000	       385 ns/op	       0 B/op	       0 allocs/op
+
+BenchmarkFibonacci/Dynamic20-8        	50000000	        24.2 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFibonacci/Memoized20-8       	  300000	      4560 ns/op	    1181 B/op	       7 allocs/op
+BenchmarkFibonacci/Recursive20-8      	   30000	     40833 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFibonacci/Selfref20-8        	   30000	     47666 ns/op	       0 B/op	       0 allocs/op
+
+BenchmarkFibonacci/Dynamic40-8        	30000000	        53.4 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFibonacci/Memoized40-8       	  200000	     10125 ns/op	    2522 B/op	      11 allocs/op
+BenchmarkFibonacci/Recursive40-8      	       2	 618500000 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFibonacci/Selfref40-8        	       2	 720500000 ns/op	       0 B/op	       0 allocs/op
+PASS
