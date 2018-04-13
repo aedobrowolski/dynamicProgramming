@@ -1,0 +1,29 @@
+Running tool: C:\Go\bin\go.exe test -benchmem -run=^$ . -bench ^Benchmark$
+
+Benchmark/Dynamic-small-8         	10000000	       135 ns/op	      32 B/op	       1 allocs/op
+Benchmark/Recursive-small-8       	10000000	       170 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Selfref-small-8         	10000000	       120 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Memoized-small-8        	  500000	      2290 ns/op	     440 B/op	       4 allocs/op
+
+Benchmark/Dynamic-med-1-8         	10000000	       197 ns/op	      32 B/op	       1 allocs/op
+Benchmark/Recursive-med-1-8       	 3000000	       516 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Selfref-med-1-8         	 3000000	       449 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Memoized-med-1-8        	  200000	      8415 ns/op	    2652 B/op	       6 allocs/op
+
+Benchmark/Dynamic-med-2-8         	10000000	       225 ns/op	      48 B/op	       1 allocs/op
+Benchmark/Recursive-med-2-8       	 2000000	       619 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Selfref-med-2-8         	 3000000	       548 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Memoized-med-2-8        	  200000	      9050 ns/op	    2662 B/op	       6 allocs/op
+
+Benchmark/Dynamic-med-3-8         	10000000	       213 ns/op	      32 B/op	       1 allocs/op
+Benchmark/Recursive-med-3-8       	 2000000	       623 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Selfref-med-3-8         	 3000000	       546 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Memoized-med-3-8        	  200000	      9310 ns/op	    2656 B/op	       6 allocs/op
+
+Benchmark/Dynamic-big-1-8         	 3000000	       480 ns/op	      80 B/op	       1 allocs/op
+Benchmark/Recursive-big-1-8       	    5000	    321218 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Selfref-big-1-8         	    5000	    316018 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Memoized-big-1-8        	   20000	     91505 ns/op	   12662 B/op	      12 allocs/op
+PASS
+ok  	subsequence	40.437s
+Success: Benchmarks passed.
