@@ -19,9 +19,9 @@ Wikipedia articles on [Memoization][1] and [Dynamic Programming][2] for more
 details.
 
 An important sub-class of DP problems uses recurrence relationships to count
-solutions to a problem, without finding an optimal solution. The recurrence
-relationship has the property that at each step the number of solutions is a
-mathematical combination of the number of solutions to the set of next simplest
+solutions to a problem, without necessarily identifying an optimal solution.
+The recurrence relationship has the property that at each step the number of
+solutions depends only on the number of solutions to the set of simpler
 sub-problems.
 
 Probably the best way to learn dynamic programming is to read through an

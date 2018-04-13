@@ -1,22 +1,22 @@
 $ go test -bench .
 
-BenchmarkFibonacci/Dynamic1-8         	300000000	         4.03 ns/op	       0 B/op	       0 allocs/op
-BenchmarkFibonacci/Memoized1-8        	 5000000	       373 ns/op	     232 B/op	       4 allocs/op
-BenchmarkFibonacci/Recursive1-8       	300000000	         4.02 ns/op	       0 B/op	       0 allocs/op
-BenchmarkFibonacci/Selfref1-8         	200000000	         6.54 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Dynamic1-8         	300000000	         4.03 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Memoized1-8        	 5000000	       373 ns/op	     232 B/op	       4 allocs/op
+Benchmark/Recursive1-8       	300000000	         4.02 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Selfref1-8         	200000000	         6.54 ns/op	       0 B/op	       0 allocs/op
 
-BenchmarkFibonacci/Dynamic10-8        	100000000	        12.1 ns/op	       0 B/op	       0 allocs/op
-BenchmarkFibonacci/Memoized10-8       	 1000000	      1849 ns/op	     524 B/op	       5 allocs/op
-BenchmarkFibonacci/Recursive10-8      	 5000000	       329 ns/op	       0 B/op	       0 allocs/op
-BenchmarkFibonacci/Selfref10-8        	 5000000	       385 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Dynamic10-8        	100000000	        12.1 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Memoized10-8       	 1000000	      1849 ns/op	     524 B/op	       5 allocs/op
+Benchmark/Recursive10-8      	 5000000	       329 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Selfref10-8        	 5000000	       385 ns/op	       0 B/op	       0 allocs/op
 
-BenchmarkFibonacci/Dynamic20-8        	50000000	        24.2 ns/op	       0 B/op	       0 allocs/op
-BenchmarkFibonacci/Memoized20-8       	  300000	      4560 ns/op	    1181 B/op	       7 allocs/op
-BenchmarkFibonacci/Recursive20-8      	   30000	     40833 ns/op	       0 B/op	       0 allocs/op
-BenchmarkFibonacci/Selfref20-8        	   30000	     47666 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Dynamic20-8        	50000000	        24.2 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Memoized20-8       	  300000	      4560 ns/op	    1181 B/op	       7 allocs/op
+Benchmark/Recursive20-8      	   30000	     40833 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Selfref20-8        	   30000	     47666 ns/op	       0 B/op	       0 allocs/op
 
-BenchmarkFibonacci/Dynamic40-8        	30000000	        53.4 ns/op	       0 B/op	       0 allocs/op
-BenchmarkFibonacci/Memoized40-8       	  200000	     10125 ns/op	    2522 B/op	      11 allocs/op
-BenchmarkFibonacci/Recursive40-8      	       2	 618500000 ns/op	       0 B/op	       0 allocs/op
-BenchmarkFibonacci/Selfref40-8        	       2	 720500000 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Dynamic40-8        	30000000	        53.4 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Memoized40-8       	  200000	     10125 ns/op	    2522 B/op	      11 allocs/op
+Benchmark/Recursive40-8      	       2	 618500000 ns/op	       0 B/op	       0 allocs/op
+Benchmark/Selfref40-8        	       2	 720500000 ns/op	       0 B/op	       0 allocs/op
 PASS

@@ -10,41 +10,20 @@ var testFunctions = []struct {
 	desc string
 	f    func(int) int
 }{
-	{
-		"Dynamic", fibonacci.Dynamic,
-	}, {
-		"Memoized", fibonacci.Memoized,
-	}, {
-		"Recursive", fibonacci.Recursive,
-	}, {
-		"Selfref", fibonacci.Fibonacci,
-	},
+	{"Dynamic", fibonacci.Dynamic}, 
+	{"Memoized", fibonacci.Memoized}, 
+	{"Recursive", fibonacci.Recursive}, 
+	{"Selfref", fibonacci.Fibonacci},
 }
 
 var testCases = []struct {
 	desc    string
 	in, out int
 }{
-	{
-		desc: "1",
-		in:   1,
-		out:  1,
-	},
-	{
-		desc: "10",
-		in:   10,
-		out:  55,
-	},
-	{
-		desc: "20",
-		in:   20,
-		out:  6765,
-	},
-	{
-		desc: "40",
-		in:   40,
-		out:  102334155,
-	},
+	{desc: "1",  in: 1,  out: 1},
+	{desc: "10", in: 10, out: 55},
+	{desc: "20", in: 20, out: 6765},
+	{desc: "40", in: 40, out: 102334155},
 }
 
 func TestFibonacci(t *testing.T) {
