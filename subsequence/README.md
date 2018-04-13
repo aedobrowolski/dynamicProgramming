@@ -1,5 +1,8 @@
 # Sub-sequence counting
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 The problem proposed here is from an old ACM programming competition (UVA
 10069). It is meant as a learning tool to study dynamic programming.
 
